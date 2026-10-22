@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>One-Man-Company — fully automating everything with AI</title>
+<meta name="description" content="One-Man-Company: a one-person company run by autonomous AI agents. Projects, repositories and the Hermes Workspace Connector.">
+<style>
+  :root { color-scheme: light dark; --fg: #14161a; --muted: #5c6470; --line: #e2e5ea; --card: #f7f8fa; --accent: #2f6f4f; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg: #e8eaee; --muted: #9aa3b0; --line: #2b3038; --card: #1b1f26; --accent: #7fd6a5; }
+  }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+         color: var(--fg); background: canvas; max-width: 52rem; margin: 0 auto;
+         padding: 3rem 1.25rem 5rem; line-height: 1.65; }
+  h1 { font-size: 2.1rem; letter-spacing: -.02em; margin: 0 0 .35rem; }
+  h2 { font-size: 1.2rem; margin: 2.75rem 0 .75rem; letter-spacing: -.01em; }
+  h3 { font-size: 1rem; margin: 0 0 .35rem; }
+  p { margin: 0 0 1rem; }
+  .tagline { font-size: 1.15rem; color: var(--accent); margin: 0 0 1.5rem; font-weight: 600; }
+  .lede { font-size: 1.05rem; }
+  .muted { color: var(--muted); font-size: .9rem; }
+  a { color: inherit; text-decoration-color: var(--muted); text-underline-offset: 2px; }
+  a:hover { text-decoration-color: var(--accent); }
+  .links { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; margin: 1rem 0 0; padding: 0; list-style: none; }
+  .links a { font-weight: 600; }
+  #projects { display: grid; gap: .85rem; margin-top: 1rem; }
+  .project { border: 1px solid var(--line); background: var(--card); border-radius: 12px; padding: 1rem 1.15rem; }
+  .project h3 { display: flex; align-items: baseline; gap: .5rem; flex-wrap: wrap; }
+  .lang { font-size: .75rem; font-weight: 600; text-transform: uppercase; letter-spacing: .06em;
+          color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: .1rem .5rem; }
+  .project p { margin: 0 0 .5rem; }
+  .project a { font-size: .9rem; }
+  .app { border-left: 3px solid var(--accent); padding-left: 1rem; }
+  footer { margin-top: 4rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+
+<h1>One-Man-Company</h1>
+<p class="tagline">Fully automating everything with AI.</p>
+
+<p class="lede">
+  A company of one, run by agents. The goal is straightforward: hand every repeatable task to
+  autonomous AI — research, writing, coding, monitoring, triage, bookkeeping, the lot — and keep
+  only the judgment for the human. Everything here is built in the open, one project at a time.
+</p>
+
+<p>
+  Each repository below is one working part of that machine: separate tools that plug into the same
+  agent runtime and run on my own hardware. More get added as the automation reaches further.
+</p>
+
+<ul class="links">
+  <li><a href="https://github.com/One-Man-Company">GitHub → @One-Man-Company</a></li>
+  <li><a href="https://x.com/adopt_tech">X → @adopt_tech</a></li>
+</ul>
+
+<h2>Projects</h2>
+<div id="projects" data-user="One-Man-Company">
+  <article class="project">
+    <h3>Skills-ContextManager <span class="lang">Python</span></h3>
+    <p>
+      A self-hosted web application for managing AI skills, workflows and contexts with full MCP
+      (Model Context Protocol) integration. Organize and dynamically load specialized knowledge
+      bases into any AI agent by toggling skills on and off in a simple local web UI.
+    </p>
+    <a href="https://github.com/One-Man-Company/Skills-ContextManager">github.com/One-Man-Company/Skills-ContextManager</a>
+  </article>
+  <article class="project">
+    <h3>One-Man-Company.github.io <span class="lang">HTML</span></h3>
+    <p>
+      This site — the project index for the account, plus the branding, privacy policy and terms
+      for its Google OAuth client.
+    </p>
+    <a href="https://github.com/One-Man-Company/One-Man-Company.github.io">github.com/One-Man-Company/One-Man-Company.github.io</a>
+  </article>
+</div>
+<p id="projects-note" class="muted"></p>
+
+<h2>The app behind the Google sign-in</h2>
+<div class="app">
+  <h3>Hermes Workspace Connector</h3>
+  <p>
+    A <strong>private, single-user</strong> OAuth 2.0 client. It is the Google Workspace integration
+    for a self-hosted <em>Hermes</em> agent — the assistant that runs the automation described above,
+    on its owner's own computer. When the owner asks the agent to do something in their own Google
+    account, this client calls the Google APIs on their behalf: search and send mail in their own
+    Gmail, find and move files in their own Drive, read and update their own Sheets and Docs, and
+    read their own calendars and contacts.
+  </p>
+  <p>
+    Every call is initiated by the owner, from the owner's own machine, against the owner's own
+    Google Account. Data is processed locally, never sold, never used for advertising, never shared
+    with third parties. The client has no server component of its own and exactly one user: its owner.
+  </p>
+  <p class="muted">
+    Read the <a href="privacy.html">Privacy Policy</a> for the full disclosure of what is accessed,
+    how it is stored, and how to revoke access — or the <a href="terms.html">Terms of Service</a>.
+    Questions, or a request concerning your data? Open an issue in the
+    <a href="https://github.com/One-Man-Company/One-Man-Company.github.io/issues">site repository</a>.
+  </p>
+</div>
+
+<footer>
+  <p class="muted">
+    <a href="privacy.html">Privacy Policy</a> ·
+    <a href="terms.html">Terms of Service</a> ·
+    <a href="https://github.com/One-Man-Company">GitHub</a> ·
+    <a href="https://x.com/adopt_tech">X</a>
+  </p>
+  <p class="muted">Last updated: 22 October 2026</p>
+</footer>
+
+<script>
+// Progressive enhancement: refresh the project list from the public GitHub API.
+// The static list above stays as the fallback when JS or the API is unavailable.
+(async () => {
+  const mount = document.getElementById('projects');
+  const note = document.getElementById('projects-note');
+  if (!mount) return;
+  try {
+    const res = await fetch('https://api.github.com/users/' + mount.dataset.user +
+                            '/repos?per_page=100&sort=updated',
+                            { headers: { Accept: 'application/vnd.github+json' } });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const repos = (await res.json()).filter(r => !r.fork && !r.archived);
+    if (!repos.length) return;
+    mount.replaceChildren(...repos.map(r => {
+      const card = document.createElement('article');
+      card.className = 'project';
+      const h3 = document.createElement('h3');
+      h3.textContent = r.name;
+      if (r.language) {
+        const lang = document.createElement('span');
+        lang.className = 'lang';
+        lang.textContent = r.language;
+        h3.append(' ', lang);
+      }
+      const p = document.createElement('p');
+      p.textContent = r.description || 'No description yet.';
+      const a = document.createElement('a');
+      a.href = r.html_url;
+      a.textContent = r.html_url.replace('https://', '');
+      card.append(h3, p, a);
+      return card;
+    }));
+    note.textContent = 'Listed live from the GitHub API — ' + repos.length + ' public repositories.';
+  } catch (e) {
+    note.textContent = 'Project list loaded from the copy published with this page.';
+  }
+})();
+</script>
+
+</body>
+</html>

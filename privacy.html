@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Hermes Workspace Connector</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+         max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; line-height: 1.65; }
+  h1 { font-size: 1.8rem; margin-bottom: .25rem; }
+  .sub { color: #666; margin-top: 0; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  ul { padding-left: 1.25rem; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd; font-size: .9rem; color: #666; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="sub">Hermes Workspace Connector — effective 22 October 2026</p>
+
+<p>
+  Hermes Workspace Connector ("the application") is a private, single-user client used by its owner
+  to let a self-hosted <em>Hermes</em> agent work with the owner's own Google Account. This policy
+  explains what Google user data the application accesses, how it is used and stored, and with whom
+  it is shared.
+</p>
+
+<h2>1. Google user data we access</h2>
+<p>With the owner's explicit consent, the application requests the following Google API scopes:</p>
+<ul>
+  <li><code>gmail.readonly</code> — read the owner's Gmail messages.</li>
+  <li><code>gmail.send</code> — send mail from the owner's Gmail address when the owner asks.</li>
+  <li><code>gmail.modify</code> — apply labels and mark messages read or unread at the owner's request.</li>
+  <li><code>drive</code> — find, read, create, upload and download files in the owner's Google Drive, including Google Sheets and Google Slides files.</li>
+  <li><code>spreadsheets</code> — read and update the owner's Google Sheets.</li>
+  <li><code>documents</code> — read, create and edit the owner's Google Docs.</li>
+  <li><code>calendar</code> — read and manage events on the owner's calendars.</li>
+  <li><code>contacts.readonly</code> — read the owner's Google Contacts.</li>
+</ul>
+<p>
+  The application accesses only the account that authorizes it, and only the scopes listed above.
+  It does not access any other Google Account.
+</p>
+
+<h2>2. How the data is used</h2>
+<p>
+  Google user data is used for one purpose only: to carry out tasks that the owner explicitly asks
+  the agent to perform on the owner's own data — for example "find the invoice I received last
+  week", "add a row to this spreadsheet", or "draft a reply to this message". Data is never used to
+  build profiles, never analyzed for advertising, and never used to train machine-learning models.
+</p>
+
+<h2>3. How the data is stored</h2>
+<p>
+  OAuth credentials (an access token and a refresh token) are stored in a private file on the
+  owner's own computer, readable only by the owner's operating-system account. Any message content,
+  file content or other Google user data the application retrieves is processed locally on that same
+  computer and is retained only as long as the owner's own local history keeps it. The application
+  operates no server, no cloud database, and no hosted service of its own; no Google user data is
+  transmitted to any third party.
+</p>
+
+<h2>4. Sharing and disclosure</h2>
+<p>
+  We do not sell, rent, trade or otherwise share Google user data with any third party. Data is not
+  disclosed to advertisers, data brokers or analytics providers. Data would be disclosed only if
+  strictly required by law, and only to the extent legally required. The application contains no
+  advertising, no third-party analytics and no tracking.
+</p>
+
+<h2>5. Google API Services User Data Policy and Limited Use</h2>
+<p>
+  The application's use of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
+  User Data Policy</a>, including the <strong>Limited Use</strong> requirements. Specifically:
+</p>
+<ul>
+  <li>Google user data is used only to provide or improve the owner's own user-facing features.</li>
+  <li>Google user data is not transferred to third parties except as necessary to provide those features, to comply with applicable law, or as part of a merger or acquisition with notice to users.</li>
+  <li>Google user data is not used for advertising, including retargeting or personalized advertising.</li>
+  <li>Google user data is not used to determine creditworthiness or for lending purposes.</li>
+  <li>Humans do not read Google user data unless the owner asks for help with their own data, it is necessary for security purposes, to comply with law, or with the owner's explicit consent.</li>
+</ul>
+
+<h2>6. Retention and deletion</h2>
+<p>
+  Google user data is retained locally only while it remains useful to the owner, and the owner may
+  delete it at any time from their own machine, including by deleting the stored credential file.
+  Access can be revoked at any time at
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>; once
+  access is revoked, the stored credentials stop working immediately and the application can no
+  longer read any Google user data. Requests to delete data can also be raised through the contact link below.
+</p>
+
+<h2>7. Security</h2>
+<p>
+  Credentials are stored with owner-only file permissions on the owner's computer. All communication
+  with Google APIs takes place over TLS/HTTPS. The owner's computer account is protected by the
+  operating system's own login security.
+</p>
+
+<h2>8. Children</h2>
+<p>The application is not directed at children, and it has no users other than its owner.</p>
+
+<h2>9. Changes to this policy</h2>
+<p>
+  Any changes to this policy will be published on this page with an updated effective date.
+</p>
+
+<h2>10. Contact</h2>
+<p>
+  Questions about this policy, or requests concerning Google user data held by the application, can
+  be raised in the site repository:
+  <a href="https://github.com/One-Man-Company/One-Man-Company.github.io/issues">github.com/One-Man-Company/One-Man-Company.github.io/issues</a>.
+</p>
+
+<footer>
+  <p><a href="index.html">Home</a> · <a href="terms.html">Terms of Service</a></p>
+  <p>Effective: 22 October 2026</p>
+</footer>
+
+</body>
+</html>
