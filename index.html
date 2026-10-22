@@ -32,7 +32,6 @@
           color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: .1rem .5rem; }
   .project p { margin: 0 0 .5rem; }
   .project a { font-size: .9rem; }
-  .app { border-left: 3px solid var(--accent); padding-left: 1rem; }
   footer { margin-top: 4rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
 </style>
 </head>
@@ -78,30 +77,6 @@
   </article>
 </div>
 <p id="projects-note" class="muted"></p>
-
-<h2>The app behind the Google sign-in</h2>
-<div class="app">
-  <h3>Hermes Workspace Connector</h3>
-  <p>
-    A <strong>private, single-user</strong> OAuth 2.0 client. It is the Google Workspace integration
-    for a self-hosted <em>Hermes</em> agent — the assistant that runs the automation described above,
-    on its owner's own computer. When the owner asks the agent to do something in their own Google
-    account, this client calls the Google APIs on their behalf: search and send mail in their own
-    Gmail, find and move files in their own Drive, read and update their own Sheets and Docs, and
-    read their own calendars and contacts.
-  </p>
-  <p>
-    Every call is initiated by the owner, from the owner's own machine, against the owner's own
-    Google Account. Data is processed locally, never sold, never used for advertising, never shared
-    with third parties. The client has no server component of its own and exactly one user: its owner.
-  </p>
-  <p class="muted">
-    Read the <a href="privacy.html">Privacy Policy</a> for the full disclosure of what is accessed,
-    how it is stored, and how to revoke access — or the <a href="terms.html">Terms of Service</a>.
-    Questions, or a request concerning your data? Open an issue in the
-    <a href="https://github.com/One-Man-Company/One-Man-Company.github.io/issues">site repository</a>.
-  </p>
-</div>
 
 <footer>
   <p class="muted">
